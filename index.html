@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HermioneClintonZelda88Inu Token</title>
+  <style>
+    @font-face {
+      font-family: 'Pixel Emulator';
+      src: url('path/to/pixel-emulator.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'Pixel Emulator', cursive;
+      margin: 0;
+      padding: 0;
+      background-image: url('002.png'); /* Replace with the actual path to your background image */
+      background-size: cover;
+      color: #7F0909; /* Gryffindor Red */
+    }
+
+    /* Add styles for flying elements */
+    .flying-element {
+      position: absolute;
+      z-index: 999;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    /* Triforce */
+    .triforce {
+      top: 60%;
+      left: 10%;
+      width: 50px;
+      animation: triforceAnimation 6s infinite;
+    }
+
+    @keyframes triforceAnimation {
+      0% { transform: translateY(0) rotate(0); }
+      100% { transform: translateY(-100px) rotate(180deg); }
+    }
+
+    /* Wands */
+    .wands {
+      top: 30%;
+      left: 20%;
+      width: 40px;
+      animation: wandsAnimation 5s infinite;
+    }
+
+    @keyframes wandsAnimation {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-100px); }
+    }
+
+    /* Books */
+    .books {
+      top: 70%;
+      left: 40%;
+      width: 30px;
+      animation: booksAnimation 7s infinite;
+    }
+
+    @keyframes booksAnimation {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-100px); }
+    }
+
+    /* Swords */
+    .swords {
+      top: 50%;
+      left: 80%;
+      width: 35px;
+      animation: swordsAnimation 8s infinite;
+    }
+
+    @keyframes swordsAnimation {
+      0% { transform: translateY(0) rotate(0); }
+      100% { transform: translateY(-100px) rotate(360deg); }
+    }
+
+    /* Flags */
+    .flags {
+      top: 80%;
+      left: 50%;
+      width: 40px;
+      animation: flagsAnimation 9s infinite;
+    }
+
+    @keyframes flagsAnimation {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-100px); }
+    }
+
+    /* Add styles for the buttons */
+    .social-chart-buttons {
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+    }
+
+    .button {
+      margin: 0 15px;
+      padding: 15px 30px;
+      background-color: #FF6666; /* Light Coral */
+      color: #FFF;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-transform: uppercase;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #CC0000; /* Dark Red */
+    }
+  </style>
+</head>
+<body>
+  <!-- Add flying elements to the container -->
+  <div class="flying-element triforce">
+    <img src="Triforce.gif" alt="Triforce">
+  </div>
+
+  <div class="flying-element wands">
+    <img src="Ghermione.gif" alt="Wands">
+  </div>
+
+  <div class="flying-element books">
+    <img src="hermioneblink.gif" alt="Books">
+  </div>
+
+  <div class="flying-element swords">
+    <img src="sword.gif" alt="Swords">
+  </div>
+
+  <div class="flying-element flags">
+    <img src="usa.gif" alt="Flags">
+  </div>
+
+  <!-- Add social and chart buttons -->
+  <div class="social-chart-buttons">
+    <button class="button">Facebook</button>
+    <button class="button">Twitter</button>
+    <button class="button">Instagram</button>
+    <button class="button">Chart</button>
+  </div>
+</body>
+</html>
