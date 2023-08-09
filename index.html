@@ -12,9 +12,20 @@
       font-family: 'Pixel Emulator', cursive;
       margin: 0;
       padding: 0;
-      background-image: url('002.png'); 
-      background-size: cover;
       color: #7F0909; 
+      overflow: hidden; /* Hide overflowing content */
+    }
+
+    video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1; 
     }
 
     .flying-element {
@@ -114,6 +125,11 @@
   </style>
 </head>
 <body>
+  <video autoplay loop muted>
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
   <div class="flying-element triforce">
     <img src="Triforce.gif" alt="Triforce">
   </div>
@@ -134,12 +150,11 @@
     <img src="usa.gif" alt="Flags">
   </div>
 
-<div class="social-chart-buttons">
-  <a href="https://www.facebook.com/" class="button">Facebook</a>
-  <a href="https://twitter.com/" class="button">Twitter</a>
-  <a href="https://www.instagram.com/" class="button">Instagram</a>
-  <a href="https://dexscreener.com/ethereum/0xcCc75bCdCAF5F7358e48C1CFDF07d2c28602ED60" class="button">Chart</a>
-</div>
-
+  <div class="social-chart-buttons">
+    <a href="https://www.facebook.com/" class="button" target="_blank">Facebook</a>
+    <a href="https://twitter.com/" class="button" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/" class="button" target="_blank">Instagram</a>
+    <a href="https://dexscreener.com/ethereum/0xcCc75bCdCAF5F7358e48C1CFDF07d2c28602ED60" class="button" target="_blank">Chart</a>
+  </div>
 </body>
 </html>
