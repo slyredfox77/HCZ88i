@@ -12,7 +12,7 @@
       font-family: 'Pixel Emulator', cursive;
       margin: 0;
       padding: 0;
-      color: #7F0909; 
+      color: #7F0909;
       overflow: hidden; /* Hide overflowing content */
     }
 
@@ -21,11 +21,9 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: -1; 
+      width: 640px;
+      height: 480px;
+      z-index: -1;
     }
 
     .flying-element {
@@ -43,8 +41,12 @@
     }
 
     @keyframes triforceAnimation {
-      0% { transform: translateY(0) rotate(0); }
-      100% { transform: translateY(-100px) rotate(180deg); }
+      0% {
+        transform: translateY(0) rotate(0);
+      }
+      100% {
+        transform: translateY(-100px) rotate(180deg);
+      }
     }
 
     .wands {
@@ -55,8 +57,12 @@
     }
 
     @keyframes wandsAnimation {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-100px); }
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100px);
+      }
     }
 
     .books {
@@ -67,8 +73,12 @@
     }
 
     @keyframes booksAnimation {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-100px); }
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100px);
+      }
     }
 
     .swords {
@@ -79,8 +89,12 @@
     }
 
     @keyframes swordsAnimation {
-      0% { transform: translateY(0) rotate(0); }
-      100% { transform: translateY(-100px) rotate(360deg); }
+      0% {
+        transform: translateY(0) rotate(0);
+      }
+      100% {
+        transform: translateY(-100px) rotate(360deg);
+      }
     }
 
     .flags {
@@ -91,8 +105,12 @@
     }
 
     @keyframes flagsAnimation {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-100px); }
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100px);
+      }
     }
 
     .social-chart-buttons {
@@ -107,7 +125,7 @@
     .button {
       margin: 0 15px;
       padding: 15px 30px;
-      background-color: #FF6666; 
+      background-color: #FF6666;
       color: #FFF;
       font-size: 20px;
       font-weight: bold;
@@ -120,7 +138,7 @@
     }
 
     .button:hover {
-      background-color: #CC0000; 
+      background-color: #CC0000;
     }
   </style>
 </head>
